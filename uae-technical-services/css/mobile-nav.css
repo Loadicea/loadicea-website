@@ -1,0 +1,274 @@
+/* Mobile Navigation Styles */
+@media (max-width: 900px) {
+
+    /* Compact Header */
+    .site-header .nav-container {
+        padding: 0.75rem 1.5rem !important;
+        /* Reduced padding */
+    }
+
+    .site-header .logo {
+        font-size: 1.25rem !important;
+        /* Smaller text */
+    }
+
+    .site-header .logo div {
+        width: 36px !important;
+        /* Smaller icon container */
+        height: 36px !important;
+    }
+
+    .site-header .logo i {
+        font-size: 20px !important;
+        /* Smaller icon */
+    }
+
+    /* Hide Desktop Nav items */
+    .site-header .nav-links {
+        display: none !important;
+    }
+
+    /* Hide Desktop Header Actions (Phone, Email, Contact Button) */
+    .site-header .header-action-btn,
+    .site-header .nav-contact-btn {
+        display: none !important;
+    }
+
+    /* Show Hamburger Button */
+    .mobile-menu-btn {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1049;
+        /* Below overlay z-index so overlay covers it if needed, or maintain separate */
+        padding: 0;
+    }
+
+    /* When menu is open, we can hide the main hamburger if we have a close button inside,
+       OR transform it. User specifically asked for a back button, suggesting a separate control.
+       Let's keep the hamburger but ALSO add a close button inside. */
+
+    .mobile-menu-btn span {
+        width: 100%;
+        height: 2px;
+        background-color: #F4B400;
+        margin: 3px 0;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* Hide hamburger when menu is open so we don't have dual controls conflicting visually?
+       Actually, standard pattern is transforming it. But user wants a "back button".
+       We will add a dedicated Close Button inside the overlay. */
+
+    /* Toggle State for Hamburger */
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    /* Mobile Menu Overlay */
+    .mobile-nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #0A192F;
+        z-index: 1050;
+        padding: 2rem;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-nav-overlay.active {
+        transform: translateX(0);
+    }
+
+    /* Close Button inside Overlay */
+    .mobile-nav-close {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background: transparent;
+        border: none;
+        color: #F4B400;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 2rem;
+        /* Larger X */
+        padding: 0;
+        z-index: 1051;
+    }
+
+    /* Mobile Nav Links */
+    .mobile-nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 6rem 0 2rem;
+        /* Top margin to clear X */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center align as requested */
+    }
+
+    .mobile-nav-links a {
+        color: rgba(255, 255, 255, 0.85);
+        /* Slightly brighter */
+        font-family: 'Outfit', sans-serif;
+        /* Explicitly use premium font */
+        font-size: 2rem;
+        /* Balanced large size */
+        font-weight: 500;
+        /* Medium weight for quality feel */
+        text-decoration: none;
+        display: block;
+        padding: 0.75rem 0;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        position: relative;
+        letter-spacing: -0.01em;
+    }
+
+    /* Active State Indicator */
+    .mobile-nav-links a.active {
+        color: #F4B400;
+        transform: scale(1.02);
+    }
+
+    /* Centered Dot for Active State */
+    .mobile-nav-links a.active::before {
+        display: none;
+        /* Remove left dot */
+    }
+
+    .mobile-nav-links a.active::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 6px;
+        height: 6px;
+        background: #F4B400;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(244, 180, 0, 0.4);
+        /* Glow effect */
+    }
+
+    .mobile-nav-links a:hover {
+        color: #fff;
+        transform: scale(1.05);
+        /* Gentle zoom */
+        padding-left: 0;
+        /* No slide */
+    }
+
+    /* Mobile Contact Info */
+    .mobile-contact-info {
+        margin-top: auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 2rem;
+        opacity: 0;
+        transition: opacity 0.3s 0.6s ease;
+    }
+
+    .mobile-nav-overlay.active .mobile-contact-info {
+        opacity: 1;
+    }
+
+    .mobile-contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #94A3B8;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    .mobile-contact-item i {
+        color: #F4B400;
+        font-size: 1.25rem;
+    }
+
+    /* Footer Mobile Adjustments */
+    .site-footer .footer-grid,
+    .mobile-authorized-footer {
+        display: grid !important;
+        /* Force Grid Layout */
+        grid-template-columns: 1fr 1fr !important;
+        /* Force 2 Columns */
+        /* 2 Columns for side-by-side links */
+        gap: 1.5rem;
+        /* Reduced gap */
+        text-align: left;
+        /* Reset text align for clearer reading */
+    }
+
+    .footer-grid>div,
+    .mobile-authorized-footer>div {
+        text-align: left !important;
+        /* Keep text left aligned for readability in tight space, or center if preferred. Let's try left for compact feel or center? User said "not organized". Side-by-side usually looks better left or center? Let's stick to center for consistency with previous, but side-by-side. */
+        text-align: center;
+    }
+
+    /* Brand Section spans full width */
+    .site-footer .footer-grid>div:first-child,
+    .mobile-authorized-footer>div:first-child {
+        grid-column: 1 / -1 !important;
+        text-align: center !important;
+        /* Center align brand info for balance */
+        margin-bottom: 0.5rem;
+    }
+
+    /* Contact Info spans full width */
+    .site-footer .footer-grid>div:last-of-type,
+    .mobile-authorized-footer>div:last-of-type {
+        grid-column: 1 / -1 !important;
+        /* Span full width */
+        margin-top: 0.5rem;
+    }
+
+    .site-footer {
+        padding: 2rem 0 !important;
+        /* Reduced vertical padding */
+    }
+}
+
+/* Ensure hamburger is hidden on desktop */
+@media (min-width: 901px) {
+
+    .mobile-menu-btn,
+    .mobile-nav-overlay {
+        display: none !important;
+    }
+
+    /* Desktop Footer Grid - Moved from inline HTML */
+    .site-footer .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+}

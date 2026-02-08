@@ -1,0 +1,148 @@
+<!-- CTA - SOLAR SINGULARITY -->
+<section class="solar-cta-singularity"
+    style="position: relative; overflow: hidden; padding: 8rem 0; background: #000; color: white;">
+    <!-- Animated Background Elements -->
+    <div class="singularity-core"></div>
+    <div class="stars"></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="cta-glass-card"
+            style="max-width: 800px; margin: 0 auto; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 4rem 2rem; text-align: center; box-shadow: 0 0 50px rgba(0,0,0,0.5);">
+
+            <h2
+                style="font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; line-height: 1.1; letter-spacing: -1px; text-shadow: 0 0 30px rgba(245, 158, 11, 0.3);">
+                Maximize Your <br>
+                <span
+                    style="background: linear-gradient(135deg, #FFF 0%, #F59E0B 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Solar
+                    Yield</span>
+            </h2>
+
+            <p
+                style="font-size: 1.25rem; color: #D1D5DB; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                Don't let dust and invisible degradation steal your ROI. Unlock peak performance with a precision
+                technical audit.
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                <a href="contact.html" class="pulse-btn">
+                    <span style="position: relative; z-index: 2; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="ph-fill ph-lightning"></i> Request Site Audit
+                    </span>
+                    <div class="pulse-ring"></div>
+                </a>
+            </div>
+
+            <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; opacity: 0.7;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #9CA3AF;">
+                    <i class="ph-fill ph-check-circle" style="color: #10B981;"></i> Free Initial Assessment
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #9CA3AF;">
+                    <i class="ph-fill ph-check-circle" style="color: #10B981;"></i> Same-Day Callback
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .solar-cta-singularity .stars {
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(white 1px, transparent 1px),
+                radial-gradient(white 1px, transparent 1px);
+            background-size: 50px 50px, 100px 100px;
+            background-position: 0 0, 25px 25px;
+            opacity: 0.1;
+            animation: twinkle 5s infinite linear;
+        }
+
+        .singularity-core {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vw;
+            max-width: 800px;
+            max-height: 800px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 40%, transparent 70%);
+            animation: pulse-core 4s ease-in-out infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .pulse-btn {
+            position: relative;
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: white;
+            padding: 1.25rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+            overflow: hidden;
+        }
+
+        .pulse-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 0 40px rgba(245, 158, 11, 0.6);
+        }
+
+        .pulse-ring {
+            position: absolute;
+            inset: 0;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            transform: scale(1);
+        }
+
+        .pulse-btn:hover .pulse-ring {
+            animation: ripple 1.5s infinite;
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        @keyframes pulse-core {
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0.1;
+                transform: translateY(0);
+            }
+
+            50% {
+                opacity: 0.15;
+            }
+
+            100% {
+                opacity: 0.1;
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</section>
