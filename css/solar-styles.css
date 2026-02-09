@@ -1,0 +1,594 @@
+/* Solar Services Page - Enhanced Styles */
+
+/* ========================================
+   1. HERO SECTION ENHANCEMENTS
+   ======================================== */
+
+/* Animated gradient background */
+.solar-hero {
+    background: linear-gradient(135deg, #0A192F 0%, #1E3A5F 50%, #0A192F 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Solar panel pattern overlay */
+.solar-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(244, 180, 0, 0.03) 50px, rgba(244, 180, 0, 0.03) 51px),
+        repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(244, 180, 0, 0.03) 50px, rgba(244, 180, 0, 0.03) 51px);
+    opacity: 0.5;
+    animation: patternSlide 20s linear infinite;
+}
+
+@keyframes patternSlide {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+/* Floating particles */
+.solar-particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(244, 180, 0, 0.6);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(244, 180, 0, 0.8);
+}
+
+.solar-particle:nth-child(1) {
+    left: 10%;
+    top: 20%;
+    animation-delay: 0s;
+    animation-duration: 8s;
+}
+
+.solar-particle:nth-child(2) {
+    left: 30%;
+    top: 60%;
+    animation-delay: 1s;
+    animation-duration: 7s;
+}
+
+.solar-particle:nth-child(3) {
+    left: 50%;
+    top: 30%;
+    animation-delay: 2s;
+    animation-duration: 9s;
+}
+
+.solar-particle:nth-child(4) {
+    left: 70%;
+    top: 70%;
+    animation-delay: 1.5s;
+    animation-duration: 6s;
+}
+
+.solar-particle:nth-child(5) {
+    left: 85%;
+    top: 40%;
+    animation-delay: 0.5s;
+    animation-duration: 8.5s;
+}
+
+.solar-particle:nth-child(6) {
+    left: 15%;
+    top: 80%;
+    animation-delay: 2.5s;
+    animation-duration: 7.5s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-100px) translateX(20px);
+    }
+}
+
+/* Glassmorphism hero card */
+.hero-glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+/* Animated stats badges */
+.hero-stat-badge {
+    background: rgba(244, 180, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(244, 180, 0, 0.3);
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    animation: badgeFloat 4s ease-in-out infinite;
+    box-shadow: 0 4px 16px rgba(244, 180, 0, 0.2);
+}
+
+@keyframes badgeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Typing animation */
+.typing-text {
+    overflow: hidden;
+    border-right: 2px solid rgba(244, 180, 0, 0.8);
+    white-space: nowrap;
+    animation: typing 3.5s steps(60, end), blink 0.75s step-end infinite;
+    display: inline-block;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ========================================
+   2. SERVICE CARDS ENHANCEMENTS
+   ======================================== */
+
+/* Glassmorphism service cards */
+.service-card-enhanced {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(10, 25, 47, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.service-card-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #F4B400, #F59E0B);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.service-card-enhanced:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card-enhanced:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(10, 25, 47, 0.15);
+    border-color: rgba(244, 180, 0, 0.3);
+}
+
+/* Card flip animation */
+.service-card-flip {
+    position: relative;
+    height: 400px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.service-card-flip:hover {
+    transform: rotateY(180deg);
+}
+
+.service-card-front,
+.service-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.service-card-front {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+    border: 2px solid #e5e7eb;
+}
+
+.service-card-back {
+    background: linear-gradient(135deg, #0A192F 0%, #1E3A5F 100%);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Icon animations */
+.service-icon {
+    font-size: 48px;
+    color: #F4B400;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.service-card-enhanced:hover .service-icon {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 0 12px rgba(244, 180, 0, 0.6));
+}
+
+/* Progress bars */
+.service-progress {
+    height: 6px;
+    background: rgba(10, 25, 47, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.service-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #F4B400, #F59E0B);
+    border-radius: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease;
+    animation: progressFill 2s ease forwards;
+}
+
+@keyframes progressFill {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+/* ========================================
+   3. PROCESS TIMELINE
+   ======================================== */
+
+.process-timeline {
+    position: relative;
+    padding: 4rem 0;
+}
+
+.process-step {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(249, 250, 251, 0.95));
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(244, 180, 0, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.process-step.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInUp 0.6s ease forwards;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(10, 25, 47, 0.15);
+    border-color: rgba(244, 180, 0, 0.5);
+}
+
+.process-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #F4B400, #F59E0B);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 4px 12px rgba(244, 180, 0, 0.4);
+    position: relative;
+}
+
+.process-number::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #F4B400;
+    animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Connecting lines */
+.process-connector {
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #F4B400, transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: lineGrow 1s ease forwards;
+}
+
+@keyframes lineGrow {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+/* ========================================
+   4. BENEFITS & STATS
+   ======================================== */
+
+/* Animated counter */
+.stat-counter {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #F4B400, #F59E0B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Before/After slider */
+.comparison-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: ew-resize;
+}
+
+.comparison-before,
+.comparison-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.comparison-after {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    transition: clip-path 0.3s ease;
+}
+
+.comparison-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border: 3px solid #F4B400;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: ew-resize;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Animated checkmarks */
+.benefit-check {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #22c55e;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 0.75rem;
+}
+
+.benefit-check::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid #22c55e;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    animation: checkDraw 0.5s ease forwards;
+}
+
+@keyframes checkDraw {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   5. CTA SECTION
+   ======================================== */
+
+.cta-enhanced {
+    background: linear-gradient(135deg, #0A192F 0%, #1E3A5F 50%, #F4B400 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-enhanced::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(244, 180, 0, 0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.trust-badge {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    animation: badgePulse 3s ease infinite;
+}
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(244, 180, 0, 0.4);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px 10px rgba(244, 180, 0, 0);
+    }
+}
+
+/* ========================================
+   6. GLOBAL ANIMATIONS
+   ======================================== */
+
+/* Scroll reveal */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ripple effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(244, 180, 0, 0.3);
+    transform: scale(0);
+    animation: ripple 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Magnetic button */
+.btn-magnetic {
+    transition: transform 0.2s ease;
+}
+
+.btn-magnetic:hover {
+    transform: scale(1.05);
+}
+
+/* Glow effect */
+.glow-on-hover:hover {
+    filter: drop-shadow(0 0 12px currentColor);
+    transition: filter 0.3s ease;
+}

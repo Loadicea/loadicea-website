@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated Building Support | Loadicea</title>
+    <meta name="description"
+        content="Integrated Electrical, Plumbing, Painting, and HVAC support. Provided alongside our solar maintenance work in Dubai.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="css/mobile-nav.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .feature-icon {
+            font-size: 32px;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .scope-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #E5E7EB;
+            border-top: 4px solid var(--color-primary);
+        }
+
+        .scope-list li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: start;
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+        }
+
+        .scope-list i {
+            min-width: 20px;
+            color: var(--color-secondary);
+            margin-top: 4px;
+            margin-right: 0.5rem;
+        }
+
+        /* Mobile Optimization Updates */
+        @media (max-width: 900px) {
+            .tech-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="no-scroll-top">
+
+    <!-- Enhanced Header Navigation -->
+    <header class="site-header"
+        style="position: sticky; top: 0; z-index: 1000; background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(244, 180, 0, 0.1); transition: all 0.3s ease;">
+        <div class="container nav-container"
+            style="display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem;">
+            <!-- Enhanced Logo -->
+            <a href="index.html" class="logo"
+                style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; font-size: 1.5rem; font-weight: 700; color: white; transition: all 0.3s ease;">
+                <div
+                    style="position: relative; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;">
+                    <div
+                        style="position: absolute; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(244, 180, 0, 0.2), rgba(244, 180, 0, 0.1)); border-radius: 12px; transition: all 0.3s ease;">
+                    </div>
+                    <i class="ph-fill ph-sun"
+                        style="font-size: 28px; color: #F4B400; position: relative; z-index: 1; transition: transform 0.3s ease;"></i>
+                </div>
+                <span
+                    style="background: linear-gradient(135deg, #FFFFFF, #D1D5DB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Loadicea</span>
+            </a>
+
+            <!-- Interactive Navigation Links -->
+            <ul class="nav-links"
+                style="display: flex; align-items: center; gap: 2.5rem; list-style: none; margin: 0; padding: 0;">
+                <li><a href="solar-maintenance.html" class="nav-link"
+                        style="color: #D1D5DB; text-decoration: none; font-weight: 500; position: relative; transition: color 0.3s ease;">Solar
+                        Services</a></li>
+                <li><a href="building-maintenance.html" class="nav-link active"
+                        style="color: #F4B400; text-decoration: none; font-weight: 500; position: relative; transition: color 0.3s ease;">Building
+                        Services</a></li>
+                <li><a href="industries.html" class="nav-link"
+                        style="color: #D1D5DB; text-decoration: none; font-weight: 500; position: relative; transition: color 0.3s ease;">Sectors</a>
+                </li>
+                <li><a href="value-simulator.html" class="nav-link"
+                        style="color: #D1D5DB; text-decoration: none; font-weight: 500; position: relative; transition: color 0.3s ease;">Savings
+                        Demo</a></li>
+            </ul>
+
+            <!-- Header Actions -->
+            <div style="display: flex; align-items: center; gap: 1.5rem;">
+                <!-- Phone Icon with Tooltip -->
+                <a href="tel:+971529975000" class="header-action-btn"
+                    style="width: 40px; height: 40px; background: rgba(244, 180, 0, 0.1); border: 1px solid rgba(244, 180, 0, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #F4B400; text-decoration: none; transition: all 0.3s ease; position: relative;">
+                    <i class="ph-fill ph-phone" style="font-size: 18px;"></i>
+                    <span class="tooltip"
+                        style="position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background: #0A192F; color: white; padding: 0.5rem 0.75rem; border-radius: 6px; font-size: 0.75rem; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease;">Call
+                        Us</span>
+                </a>
+
+                <!-- Email Icon -->
+                <a href="mailto:sales@loadicea.com" class="header-action-btn"
+                    style="width: 40px; height: 40px; background: rgba(244, 180, 0, 0.1); border: 1px solid rgba(244, 180, 0, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #F4B400; text-decoration: none; transition: all 0.3s ease; position: relative;">
+                    <i class="ph-fill ph-envelope" style="font-size: 18px;"></i>
+                    <span class="tooltip"
+                        style="position: absolute; bottom: -35px; left: 50%; transform: translateX(-50%); background: #0A192F; color: white; padding: 0.5rem 0.75rem; border-radius: 6px; font-size: 0.75rem; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease;">Email
+                        Us</span>
+                </a>
+
+                <!-- Contact Button -->
+                <a href="contact.html" class="nav-contact-btn"
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #F4B400, #F59E0B); color: #0A192F; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 12px rgba(244, 180, 0, 0.3); transition: all 0.3s ease;">
+                    Contact
+                    <i class="ph-bold ph-arrow-right" style="font-size: 16px; transition: transform 0.3s ease;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        /* Logo hover effect */
+        .logo:hover .ph-sun {
+            transform: rotate(90deg);
+        }
+
+        .logo:hover div:first-child {
+            box-shadow: 0 0 20px rgba(244, 180, 0, 0.4);
+        }
+
+        /* Nav link hover effects */
+        a.nav-link:not(.nav-contact-btn)::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #F4B400, #F59E0B);
+            transition: width 0.3s ease;
+        }
+
+        a.nav-link:not(.nav-contact-btn):hover {
+            color: #F4B400;
+        }
+
+        a.nav-link:not(.nav-contact-btn):hover::after {
+            width: 100%;
+        }
+
+        /* Header action buttons */
+        .header-action-btn:hover {
+            background: rgba(244, 180, 0, 0.2);
+            border-color: #F4B400;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(244, 180, 0, 0.3);
+        }
+
+        /* Tooltip hover */
+        .header-action-btn:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+            bottom: -40px;
+        }
+
+        /* Contact button hover */
+        .nav-contact-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(244, 180, 0, 0.5);
+        }
+
+        .nav-contact-btn:hover i {
+            transform: translateX(4px);
+        }
+    </style>
+
+    <!-- Page Hero - EXECUTIVE DASHBOARD -->
+    <section class="section executive-hero" id="hero-dashboard"
+        style="background: radial-gradient(circle at 50% 100%, #1e293b 0%, #0f172a 50%, #020617 100%); color: white; padding: 10rem 0 8rem; position: relative; overflow: hidden;">
+
+        <!-- Live Spotlight Effect (JS Driven) -->
+        <div id="spotlight"
+            style="position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(245, 158, 11, 0.08), transparent 70%); border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%); transition: opacity 0.5s ease; opacity: 0;">
+        </div>
+
+        <!-- Golden Horizon Glow -->
+        <div
+            style="position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); width: 80%; height: 200px; background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.15), transparent 70%); filter: blur(40px); pointer-events: none;">
+        </div>
+
+        <!-- Floating Metric Cards (Decorations) -->
+        <div class="metric-card card-1"
+            style="position: absolute; top: 20%; right: 10%; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); animation: float-1 6s ease-in-out infinite;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                <div
+                    style="width: 8px; height: 8px; background: #10B981; border-radius: 50%; box-shadow: 0 0 8px #10B981;">
+                </div>
+                <span style="font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 1px;">Asset
+                    Uptime</span>
+            </div>
+            <div style="font-size: 1.5rem; font-weight: 700; color: white; font-family: 'Inter', sans-serif;">99.9%
+            </div>
+        </div>
+
+        <div class="metric-card card-2"
+            style="position: absolute; bottom: 25%; left: 10%; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); animation: float-2 7s ease-in-out infinite 1s;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                <i class="ph-fill ph-clock" style="color: #F59E0B; font-size: 14px;"></i>
+                <span style="font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 1px;">Avg
+                    Response</span>
+            </div>
+            <div style="font-size: 1.5rem; font-weight: 700; color: white; font-family: 'Inter', sans-serif;">&lt; 60m
+            </div>
+        </div>
+
+        <div class="container text-center" style="position: relative; z-index: 2;">
+
+            <span
+                style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 0.875rem; font-weight: 600; letter-spacing: 2px; color: #F59E0B; margin-bottom: 1.5rem; text-transform: uppercase; opacity: 0; animation: fade-in-up 0.8s ease-out forwards;">
+                UAE Technical Services
+            </span>
+
+            <h1
+                style="font-family: 'Inter', system-ui, sans-serif; font-size: 4.5rem; font-weight: 700; line-height: 1.05; margin-bottom: 2rem; letter-spacing: -0.02em; color: white; opacity: 0; animation: fade-in-up 0.8s ease-out 0.2s forwards;">
+                Precision Facility <br>
+                <span style="color: #94A3B8;">Maintenance.</span>
+            </h1>
+
+            <p
+                style="font-family: 'Inter', system-ui, sans-serif; font-size: 1.25rem; color: #CBD5E1; max-width: 650px; margin: 0 auto 3rem; line-height: 1.6; opacity: 0; animation: fade-in-up 0.8s ease-out 0.4s forwards;">
+                We take full ownership of your building's systems. No operational headaches, no excuses—just a team that
+                gets the job done.
+            </p>
+
+            <div
+                style="display: flex; justify-content: center; gap: 1.5rem; opacity: 0; animation: fade-in-up 0.8s ease-out 0.6s forwards;">
+                <a href="contact.html" class="btn btn-magnetic"
+                    style="background: #F59E0B; color: #0F172A; font-weight: 700; padding: 1.125rem 2.5rem; border-radius: 4px; border: none; box-shadow: 0 4px 20px rgba(245, 158, 11, 0.25); text-decoration: none; transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s ease;">
+                    Request Support
+                </a>
+                <a href="#scope" class="btn btn-magnetic"
+                    style="background: transparent; color: white; border: 1px solid rgba(255, 255, 255, 0.2); font-weight: 600; padding: 1.125rem 2.5rem; border-radius: 4px; text-decoration: none; transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), background 0.3s ease;">
+                    View Scope
+                </a>
+            </div>
+        </div>
+
+        <script>
+            // Inline script for Hero Interactivity
+            document.addEventListener('DOMContentLoaded', () => {
+                const hero = document.getElementById('hero-dashboard');
+                const spotlight = document.getElementById('spotlight');
+
+                hero.addEventListener('mousemove', (e) => {
+                    const rect = hero.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    spotlight.style.left = x + 'px';
+                    spotlight.style.top = y + 'px';
+                    spotlight.style.opacity = '1';
+                });
+
+                hero.addEventListener('mouseleave', () => {
+                    spotlight.style.opacity = '0';
+                });
+
+                // Magnetic Buttons
+                const buttons = hero.querySelectorAll('.btn-magnetic');
+                buttons.forEach(btn => {
+                    btn.addEventListener('mousemove', (e) => {
+                        const rect = btn.getBoundingClientRect();
+                        const x = e.clientX - rect.left - rect.width / 2;
+                        const y = e.clientY - rect.top - rect.height / 2;
+
+                        btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+                    });
+
+                    btn.addEventListener('mouseleave', () => {
+                        btn.style.transform = 'translate(0, 0)';
+                    });
+                });
+            });
+        </script>
+
+        <style>
+            .executive-hero h1 {
+                text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            .executive-hero .btn:first-child:hover {
+                box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+                background: #FBBF24;
+            }
+
+            .executive-hero .btn:last-child:hover {
+                background: rgba(255, 255, 255, 0.05);
+                border-color: white;
+            }
+
+            @keyframes fade-in-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes float-1 {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-15px);
+                }
+            }
+
+            @keyframes float-2 {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+
+            @keyframes ticker {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            /* Mobile adjustment for floating cards */
+            @media (max-width: 768px) {
+                .metric-card {
+                    display: none;
+                }
+            }
+        </style>
+    </section>
+    <section class="section" style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: center;">
+                <!-- Left: Content -->
+                <div>
+                    <div>
+                        <span
+                            style="display: inline-block; padding: 0.5rem 1rem; background: rgba(244, 180, 0, 0.1); color: var(--color-secondary); border-radius: 50px; font-size: 0.875rem; font-weight: 700; margin-bottom: 1rem;">
+                            Single Provider
+                        </span>
+                        <h2 class="section-title" style="margin-bottom: 1.5rem;">One Call. Total Resolution.</h2>
+                    </div>
+                    <p
+                        style="font-size: 1.125rem; color: var(--color-text-light); margin-bottom: 2rem; line-height: 1.7;">
+                        Whether it's a power break, a leaking pipe, or a broken AC, you have one number to call and one
+                        team held accountable for the fix.
+                    </p>
+
+                    <!-- Feature Cards Grid -->
+                    <div class="grid grid-2" style="gap: 1.5rem;">
+                        <div class="feature-card-simple"
+                            style="background: white; padding: 1.5rem; border-radius: 12px; border: 2px solid #E5E7EB; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(180deg, #F59E0B, #FCD34D); transition: width 0.3s ease;">
+                            </div>
+
+                            <div
+                                style="width: 56px; height: 56px; background: linear-gradient(135deg, #FFFBEB, #FEF3C7); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                                <i class="ph-fill ph-check-circle" style="font-size: 28px; color: #F59E0B;"></i>
+                            </div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--color-primary);">Simplified
+                                Logistics</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light); line-height: 1.6;">
+                                No more coordinating between plumbers and electricians
+                            </p>
+                        </div>
+
+                        <div class="feature-card-simple"
+                            style="background: white; padding: 1.5rem; border-radius: 12px; border: 2px solid #E5E7EB; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(180deg, #3B82F6, #60A5FA); transition: width 0.3s ease;">
+                            </div>
+
+                            <div
+                                style="width: 56px; height: 56px; background: linear-gradient(135deg, #EFF6FF, #DBEAFE); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                                <i class="ph-fill ph-clock-countdown" style="font-size: 28px; color: #3B82F6;"></i>
+                            </div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--color-primary);">Rapid
+                                Response</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light); line-height: 1.6;">
+                                Guaranteed response times for critical failures
+                            </p>
+                        </div>
+                        <div class="feature-card-simple"
+                            style="background: white; padding: 1.5rem; border-radius: 12px; border: 2px solid #E5E7EB; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(180deg, #10B981, #34D399); transition: width 0.3s ease;">
+                            </div>
+
+                            <div
+                                style="width: 56px; height: 56px; background: linear-gradient(135deg, #D1FAE5, #A7F3D0); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                                <i class="ph-fill ph-shield-check" style="font-size: 28px; color: #10B981;"></i>
+                            </div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--color-primary);">Full
+                                Accountability</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light); line-height: 1.6;">
+                                One team responsible for all your building systems
+                            </p>
+                        </div>
+
+                        <div class="feature-card-simple"
+                            style="background: white; padding: 1.5rem; border-radius: 12px; border: 2px solid #E5E7EB; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(180deg, #8B5CF6, #A78BFA); transition: width 0.3s ease;">
+                            </div>
+
+                            <div
+                                style="width: 56px; height: 56px; background: linear-gradient(135deg, #EDE9FE, #DDD6FE); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                                <i class="ph-fill ph-chart-line-up" style="font-size: 28px; color: #8B5CF6;"></i>
+                            </div>
+                            <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--color-primary);">Proactive
+                                Monitoring</h4>
+                            <p style="font-size: 0.9rem; color: var(--color-text-light); line-height: 1.6;">
+                                We catch problems before they become emergencies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Card -->
+                <div class="rich-card"
+                    style="background: linear-gradient(135deg, var(--color-primary) 0%, #1E3A5F 100%); color: white; padding: 3rem; min-height: 500px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden;">
+                    <!-- Decorative Elements -->
+                    <div
+                        style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(244, 180, 0, 0.15), transparent); border-radius: 50%;">
+                    </div>
+                    <div
+                        style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(59, 130, 246, 0.1), transparent); border-radius: 50%;">
+                    </div>
+
+                    <div style="position: relative; z-index: 1;">
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div
+                                style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 3px solid rgba(244, 180, 0, 0.3);">
+                                <i class="ph-fill ph-buildings"
+                                    style="font-size: 56px; color: var(--color-secondary);"></i>
+                            </div>
+                            <h3
+                                style="font-size: 1.75rem; font-weight: 700; color: var(--color-secondary); margin-bottom: 0.75rem;">
+                                All Systems. One Partner.
+                            </h3>
+                            <p style="color: #D1D5DB; font-size: 1.05rem;">
+                                Comprehensive building care without the complexity
+                            </p>
+                        </div>
+
+                        <!-- Service Icons -->
+                        <div
+                            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem;">
+                            <div style="text-align: center;">
+                                <div
+                                    style="width: 60px; height: 60px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                    <i class="ph-fill ph-lightning"
+                                        style="font-size: 28px; color: var(--color-secondary);"></i>
+                                </div>
+                                <span style="font-size: 0.875rem; color: #D1D5DB;">Electrical</span>
+                            </div>
+                            <div style="text-align: center;">
+                                <div
+                                    style="width: 60px; height: 60px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                    <i class="ph-fill ph-fan"
+                                        style="font-size: 28px; color: var(--color-secondary);"></i>
+                                </div>
+                                <span style="font-size: 0.875rem; color: #D1D5DB;">HVAC</span>
+                            </div>
+                            <div style="text-align: center;">
+                                <div
+                                    style="width: 60px; height: 60px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                                    <i class="ph-fill ph-drop"
+                                        style="font-size: 28px; color: var(--color-secondary);"></i>
+                                </div>
+                                <span style="font-size: 0.875rem; color: #D1D5DB;">Plumbing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .feature-card-simple:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-color: var(--color-secondary);
+        }
+
+        .feature-card-simple:hover>div:first-child {
+            width: 100%;
+        }
+    </style>
+
+    <!-- Technical Scope - EXECUTIVE MATRIX DESIGN -->
+    <section class="section executive-section"
+        style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); position: relative; overflow: hidden; padding: 6rem 0;">
+        <!-- Sophisticated Background Elements -->
+        <div
+            style="position: absolute; top: 0; right: 0; width: 600px; height: 600px; background: radial-gradient(circle, rgba(56, 189, 248, 0.05), transparent 70%); border-radius: 50%; pointer-events: none;">
+        </div>
+        <div
+            style="position: absolute; bottom: 0; left: 0; width: 600px; height: 600px; background: radial-gradient(circle, rgba(245, 158, 11, 0.03), transparent 70%); border-radius: 50%; pointer-events: none;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="text-center mb-16">
+                <span
+                    style="display: inline-block; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 50px; font-size: 0.875rem; font-weight: 500; color: #94A3B8; margin-bottom: 1rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    Total Facility Care
+                </span>
+                <h2 class="section-title"
+                    style="color: white; font-size: 2.75rem; margin-bottom: 1rem; font-family: 'Inter', system-ui, sans-serif; letter-spacing: -0.02em;">
+                    Integrated Scope</h2>
+                <p
+                    style="color: #94A3B8; max-width: 600px; margin: 0 auto; font-size: 1.125rem; font-family: 'Inter', system-ui, sans-serif; line-height: 1.6;">
+                    Digital monitoring and physical maintenance of your building's critical systems.
+                </p>
+            </div>
+
+            <div class="tech-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem;">
+
+                <!-- Electrical Module -->
+                <div class="executive-card"
+                    style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2.5rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <div
+                        style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2rem;">
+                        <h3
+                            style="color: white; font-size: 1.5rem; font-weight: 600; margin: 0; font-family: 'Inter', system-ui, sans-serif;">
+                            Electrical Systems</h3>
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(245, 158, 11, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="ph-fill ph-lightning" style="color: #F59E0B; font-size: 20px;"></i>
+                        </div>
+                    </div>
+
+                    <!-- Matrix Grid -->
+                    <div class="system-matrix" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <!-- Node 1 -->
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #F59E0B; font-size: 24px;"><i
+                                    class="ph-fill ph-circuitry"></i></div>
+                            <span style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Dist.
+                                Boards</span>
+                        </div>
+                        <!-- Node 2 -->
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #F59E0B; font-size: 24px;"><i
+                                    class="ph-fill ph-lightbulb"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Lighting
+                                Grid</span>
+                        </div>
+                        <!-- Node 3 -->
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #F59E0B; font-size: 24px;"><i
+                                    class="ph-fill ph-battery-charging"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Emergency</span>
+                        </div>
+                        <!-- Node 4 -->
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #F59E0B; font-size: 24px;"><i
+                                    class="ph-fill ph-plugs"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Sockets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Climate Module -->
+                <div class="executive-card"
+                    style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2.5rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <div
+                        style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2rem;">
+                        <h3
+                            style="color: white; font-size: 1.5rem; font-weight: 600; margin: 0; font-family: 'Inter', system-ui, sans-serif;">
+                            HVAC & Cooling</h3>
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(56, 189, 248, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="ph-fill ph-fan" style="color: #38BDF8; font-size: 20px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="system-matrix" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <!-- Node 1 -->
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #38BDF8; font-size: 24px;"><i
+                                    class="ph-fill ph-wind"></i></div>
+                            <span style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Air
+                                Filters</span>
+                        </div>
+                        <!-- Node 2 -->
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #38BDF8; font-size: 24px;"><i
+                                    class="ph-fill ph-thermometer"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Thermostats</span>
+                        </div>
+                        <!-- Node 3 -->
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #38BDF8; font-size: 24px;"><i
+                                    class="ph-fill ph-waves"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Ductwork</span>
+                        </div>
+                        <!-- Node 4 -->
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #38BDF8; font-size: 24px;"><i
+                                    class="ph-fill ph-snowflake"></i></div>
+                            <span style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Cooling
+                                Units</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hydraulics Module -->
+                <div class="executive-card"
+                    style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2.5rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <div
+                        style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2rem;">
+                        <h3
+                            style="color: white; font-size: 1.5rem; font-weight: 600; margin: 0; font-family: 'Inter', system-ui, sans-serif;">
+                            Plumbing & Water</h3>
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="ph-fill ph-drop" style="color: #10B981; font-size: 20px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="system-matrix" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #10B981; font-size: 24px;"><i
+                                    class="ph-fill ph-fire-extinguisher"></i></div>
+                            <span style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Water
+                                Heaters</span>
+                        </div>
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #10B981; font-size: 24px;"><i
+                                    class="ph-fill ph-gauge"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Pumps</span>
+                        </div>
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #10B981; font-size: 24px;"><i
+                                    class="ph-fill ph-toilet"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Sanitary
+                                Ware</span>
+                        </div>
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #10B981; font-size: 24px;"><i
+                                    class="ph-fill ph-drop-half-bottom"></i></div>
+                            <span style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Leak
+                                Checks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Structure Module -->
+                <div class="executive-card"
+                    style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2.5rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <div
+                        style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2rem;">
+                        <h3
+                            style="color: white; font-size: 1.5rem; font-weight: 600; margin: 0; font-family: 'Inter', system-ui, sans-serif;">
+                            Finishing Works</h3>
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(148, 163, 184, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="ph-fill ph-paint-roller" style="color: #94A3B8; font-size: 20px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="system-matrix" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #94A3B8; font-size: 24px;"><i
+                                    class="ph-fill ph-paint-brush"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Painting</span>
+                        </div>
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #94A3B8; font-size: 24px;"><i
+                                    class="ph-fill ph-squares-four"></i></div>
+                            <span style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Ceiling
+                                Tiles</span>
+                        </div>
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #94A3B8; font-size: 24px;"><i
+                                    class="ph-fill ph-grid-nine"></i></div>
+                            <span style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Floor
+                                Tiles</span>
+                        </div>
+                        <div class="system-node"
+                            style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.25rem 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease;">
+                            <div class="node-icon" style="margin-bottom: 0.75rem; color: #94A3B8; font-size: 24px;"><i
+                                    class="ph-fill ph-hammer"></i></div>
+                            <span
+                                style="display: block; color: #E2E8F0; font-size: 0.875rem; font-weight: 500;">Carpentry</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <style>
+            .executive-card:hover {
+                background: rgba(255, 255, 255, 0.05) !important;
+                transform: translateY(-8px);
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2) !important;
+                border-color: rgba(255, 255, 255, 0.15) !important;
+            }
+
+            .system-node:hover {
+                background: rgba(255, 255, 255, 0.1) !important;
+                transform: translateY(-2px);
+                border-color: rgba(255, 255, 255, 0.2) !important;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </section>
+
+    <!-- Capital Asset Protection - VALUE REPLACEMENT (LIGHT THEME) -->
+    <section class="section asset-protection-section"
+        style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); padding: 8rem 0; overflow: hidden; position: relative; color: #0F172A;">
+
+        <!-- Background Glow -->
+        <div
+            style="position: absolute; top: -20%; right: -20%; width: 800px; height: 800px; background: radial-gradient(circle, rgba(245, 158, 11, 0.03), transparent 70%); border-radius: 50%; pointer-events: none;">
+        </div>
+
+        <div class="container">
+            <div class="grid grid-2" style="gap: 4rem; align-items: center;">
+
+                <!-- Left: The Narrative -->
+                <div>
+                    <span
+                        style="display: inline-block; padding: 0.5rem 1rem; background: rgba(245, 158, 11, 0.1); border-radius: 50px; font-size: 0.875rem; font-weight: 600; color: #D97706; margin-bottom: 1rem; border: 1px solid rgba(245, 158, 11, 0.2);">
+                        Financial Impact
+                    </span>
+                    <h2 class="section-title"
+                        style="color: #0F172A; font-size: 2.75rem; margin-bottom: 1.5rem; letter-spacing: -0.02em;">
+                        Capital Asset <br>
+                        <span style="color: #64748B;">Protection</span>
+                    </h2>
+                    <p style="color: #475569; font-size: 1.125rem; line-height: 1.7; margin-bottom: 2.5rem;">
+                        We don't just fix ACs and pipes; we protect your capital investment. Our precise maintenance
+                        protocols extend the lifespan of your critical systems by up to 30%, delaying expensive
+                        replacement
+                        costs.
+                    </p>
+
+                    <!-- Key Metrics -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: 700; color: #0F172A;">+30%</div>
+                            <div style="color: #64748B; font-size: 0.9rem;">Equipment Lifespan</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: 700; color: #0F172A;">Zero</div>
+                            <div style="color: #64748B; font-size: 0.9rem;">Compliance Fines</div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn"
+                        style="background: #0F172A; color: white; padding: 1rem 2rem; border-radius: 4px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);">
+                        Request Audit
+                        <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Right: The "Shield" Graph -->
+                <div class="protection-graph-card"
+                    style="background: white; border: 1px solid #E2E8F0; border-radius: 24px; padding: 2.5rem; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.05);">
+
+                    <h3
+                        style="color: #0F172A; font-size: 1.25rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between;">
+                        Asset Value Over Time
+                        <span
+                            style="font-size: 0.8rem; color: #D97706; background: rgba(245, 158, 11, 0.1); padding: 0.25rem 0.75rem; border-radius: 50px;">PROJECTION</span>
+                    </h3>
+
+                    <!-- Interactive Chart Container -->
+                    <div class="chart-container"
+                        style="position: relative; height: 300px; width: 100%; border-left: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0;">
+
+                        <!-- Axis Labels -->
+                        <div style="position: absolute; bottom: -25px; left: 0; color: #94A3B8; font-size: 0.75rem;">
+                            Year 1
+                        </div>
+                        <div style="position: absolute; bottom: -25px; right: 0; color: #94A3B8; font-size: 0.75rem;">
+                            Year
+                            10</div>
+                        <div style="position: absolute; top: 0; left: -35px; color: #94A3B8; font-size: 0.75rem;">100%
+                        </div>
+                        <div style="position: absolute; bottom: 0; left: -30px; color: #94A3B8; font-size: 0.75rem;">0%
+                        </div>
+
+                        <!-- SVG Lines -->
+                        <svg width="100%" height="100%" viewBox="0 0 400 300" preserveAspectRatio="none"
+                            style="overflow: visible;">
+                            <!-- Grid Lines -->
+                            <line x1="0" y1="75" x2="400" y2="75" stroke="#E2E8F0" stroke-width="1" />
+                            <line x1="0" y1="150" x2="400" y2="150" stroke="#E2E8F0" stroke-width="1" />
+                            <line x1="0" y1="225" x2="400" y2="225" stroke="#E2E8F0" stroke-width="1" />
+
+                            <!-- Line A: Unmaintained (Red) -->
+                            <!-- Starts at 0,0 (top left is 100% value), drops to 400,280 (low value) -->
+                            <path d="M0,20 Q150,50 400,280" fill="none" stroke="#EF4444" stroke-width="3"
+                                stroke-dasharray="5,5" opacity="0.6" />
+                            <text x="320" y="270" fill="#EF4444" font-size="12" font-family="sans-serif">Standard
+                                Decay</text>
+
+                            <!-- Line B: Managed (Gold) -->
+                            <!-- Starts at 0,20, stays high, ends at 400,100 -->
+                            <path id="gold-line" d="M0,20 Q200,30 400,100" fill="none" stroke="#F59E0B" stroke-width="4"
+                                filter="drop-shadow(0 0 10px rgba(245,158,11,0.3))" />
+
+                            <!-- Interactive Points -->
+                            <circle cx="150" cy="50" r="6" fill="#F59E0B" class="chart-point"
+                                data-tooltip="HVAC: Chiller Life +5 Years"
+                                style="cursor: pointer; stroke: white; stroke-width: 2px;" />
+                            <circle cx="280" cy="75" r="6" fill="#F59E0B" class="chart-point"
+                                data-tooltip="Electrical: Fire Risk Eliminated"
+                                style="cursor: pointer; stroke: white; stroke-width: 2px;" />
+                            <circle cx="380" cy="95" r="6" fill="#F59E0B" class="chart-point"
+                                data-tooltip="Finishing: Property Value Retained"
+                                style="cursor: pointer; stroke: white; stroke-width: 2px;" />
+                        </svg>
+
+                        <!-- Tooltip -->
+                        <div id="chart-tooltip"
+                            style="position: absolute; top: 0; left: 0; background: #0F172A; padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #F59E0B; color: white; font-size: 0.85rem; pointer-events: none; opacity: 0; transition: opacity 0.2s; white-space: nowrap; transform: translate(-50%, -150%); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                            Savings: $50,000
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.querySelectorAll('.chart-point').forEach(point => {
+                point.addEventListener('mouseenter', (e) => {
+                    const tooltip = document.getElementById('chart-tooltip');
+                    const text = e.target.getAttribute('data-tooltip');
+
+                    // Get position relative to container
+                    const container = document.querySelector('.chart-container').getBoundingClientRect();
+                    const pointRect = e.target.getBoundingClientRect();
+
+                    const left = pointRect.left - container.left + (pointRect.width / 2);
+                    const top = pointRect.top - container.top;
+
+                    tooltip.textContent = text;
+                    tooltip.style.left = left + 'px';
+                    tooltip.style.top = top + 'px';
+                    tooltip.style.opacity = '1';
+
+                    e.target.setAttribute('r', '9');
+                });
+
+                point.addEventListener('mouseleave', (e) => {
+                    document.getElementById('chart-tooltip').style.opacity = '0';
+                    e.target.setAttribute('r', '6');
+                });
+            });
+        </script>
+
+        <style>
+            .protection-graph-card:hover {
+                border-color: #F59E0B;
+                box-shadow: 0 20px 60px rgba(245, 158, 11, 0.1);
+            }
+
+            .chart-point {
+                transition: r 0.3s ease;
+            }
+        </style>
+    </section><!-- CTA - UNIVERSAL GATEWAY -->
+    <section class="section cta-gateway"
+        style="background: #020617; position: relative; padding: 10rem 0; overflow: hidden; text-align: center;">
+
+        <!-- The Singularity (Pulsing Core) -->
+        <div class="singularity-core"></div>
+
+        <!-- Starfield (Simple) -->
+        <div class="starfield"></div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="glass-halo"
+                style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); padding: 4rem 2rem; border-radius: 32px; max-width: 800px; margin: 0 auto; box-shadow: 0 0 50px rgba(0,0,0,0.5);">
+
+                <h2 class="section-title"
+                    style="color: white; font-size: 3.5rem; letter-spacing: -0.02em; margin-bottom: 1.5rem; text-shadow: 0 0 30px rgba(255,255,255,0.2);">
+                    One Service For Everything
+                </h2>
+                <p
+                    style="font-size: 1.25rem; color: #94A3B8; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                    Experience the ease of a single partner for all your technical needs.
+                </p>
+
+                <a href="contact.html" class="btn btn-liquid-gold"
+                    style="position: relative; display: inline-flex; justify-content: center; align-items: center; font-size: 1.125rem; font-weight: 700; color: #020617; background: #F59E0B; padding: 1.25rem 3.5rem; border-radius: 50px; text-decoration: none; overflow: hidden; transition: transform 0.3s ease; box-shadow: 0 0 30px rgba(245, 158, 11, 0.4);">
+                    <span style="position: relative; z-index: 2;">Get a Free Quote</span>
+                    <div class="liquid-bg"></div>
+                </a>
+
+            </div>
+        </div>
+
+        <style>
+            .cta-gateway {
+                perspective: 1000px;
+            }
+
+            .singularity-core {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 600px;
+                height: 600px;
+                background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 40%, transparent 70%);
+                border-radius: 50%;
+                animation: pulse-singularity 8s ease-in-out infinite;
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .starfield {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image:
+                    radial-gradient(1px 1px at 10% 10%, white, transparent),
+                    radial-gradient(1px 1px at 20% 40%, white, transparent),
+                    radial-gradient(2px 2px at 40% 60%, rgba(255, 255, 255, 0.5), transparent),
+                    radial-gradient(1px 1px at 80% 80%, white, transparent),
+                    radial-gradient(1.5px 1.5px at 60% 20%, rgba(255, 255, 255, 0.6), transparent);
+                background-size: 500px 500px;
+                opacity: 0.3;
+                animation: star-drift 60s linear infinite;
+            }
+
+            .btn-liquid-gold:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 50px rgba(245, 158, 11, 0.6);
+            }
+
+            @keyframes pulse-singularity {
+
+                0%,
+                100% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 0.8;
+                }
+
+                50% {
+                    transform: translate(-50%, -50%) scale(1.2);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes star-drift {
+                from {
+                    background-position: 0 0;
+                }
+
+                to {
+                    background-position: 500px 500px;
+                }
+            }
+        </style>
+    </section> <!-- Enhanced Footer -->
+    <footer class="site-footer"
+        style="background: linear-gradient(180deg, #0A192F 0%, #050D1A 100%); color: white; position: relative; overflow: hidden; padding: 3rem 0;">
+        <!-- Decorative Elements -->
+        <div
+            style="position: absolute; top: -150px; right: -150px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(244, 180, 0, 0.05), transparent); border-radius: 50%;">
+        </div>
+        <div
+            style="position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(244, 180, 0, 0.03), transparent); border-radius: 50%;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="footer-grid"
+                style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 3rem;">
+                <!-- Brand Column -->
+                <div>
+                    <a href="index.html"
+                        style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; margin-bottom: 1.5rem;">
+                        <div
+                            style="position: relative; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;">
+                            <div
+                                style="position: absolute; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(244, 180, 0, 0.2), rgba(244, 180, 0, 0.1)); border-radius: 12px; box-shadow: 0 0 20px rgba(244, 180, 0, 0.2);">
+                            </div>
+                            <i class="ph-fill ph-sun"
+                                style="font-size: 28px; color: #F4B400; position: relative; z-index: 1;"></i>
+                        </div>
+                        <span
+                            style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #FFFFFF, #D1D5DB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Loadicea</span>
+                    </a>
+                    <p style="color: #9CA3AF; line-height: 1.7; margin-bottom: 1.5rem;">
+                        Specialized Solar System and Facility Asset Maintenance. Maximizing value through technical
+                        excellence.
+                    </p>
+                    <!-- Social Links -->
+                    <div class="social-links" style="display: flex; gap: 1rem;">
+                        <a href="#" class="footer-social"
+                            style="width: 40px; height: 40px; background: rgba(244, 180, 0, 0.1); border: 1px solid rgba(244, 180, 0, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #F4B400; text-decoration: none; transition: all 0.3s ease;">
+                            <i class="ph-fill ph-linkedin-logo" style="font-size: 20px;"></i>
+                        </a>
+                        <a href="#" class="footer-social"
+                            style="width: 40px; height: 40px; background: rgba(244, 180, 0, 0.1); border: 1px solid rgba(244, 180, 0, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #F4B400; text-decoration: none; transition: all 0.3s ease;">
+                            <i class="ph-fill ph-instagram-logo" style="font-size: 20px;"></i>
+                        </a>
+                        <a href="mailto:sales@loadicea.com" class="footer-social"
+                            style="width: 40px; height: 40px; background: rgba(244, 180, 0, 0.1); border: 1px solid rgba(244, 180, 0, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #F4B400; text-decoration: none; transition: all 0.3s ease;">
+                            <i class="ph-fill ph-envelope-simple" style="font-size: 20px;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 1.5rem; color: white;">Quick Links
+                    </h4>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li><a href="solar-maintenance.html" class="footer-link"
+                                style="color: #9CA3AF; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"><i
+                                    class="ph-bold ph-caret-right"
+                                    style="font-size: 14px; transition: transform 0.3s ease;"></i> Solar Services</a>
+                        </li>
+                        <li><a href="building-maintenance.html" class="footer-link"
+                                style="color: #9CA3AF; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"><i
+                                    class="ph-bold ph-caret-right"
+                                    style="font-size: 14px; transition: transform 0.3s ease;"></i> Building Services</a>
+                        </li>
+                        <li><a href="value-simulator.html" class="footer-link"
+                                style="color: #9CA3AF; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"><i
+                                    class="ph-bold ph-caret-right"
+                                    style="font-size: 14px; transition: transform 0.3s ease;"></i> Savings Demo</a></li>
+                        <li><a href="industries.html" class="footer-link"
+                                style="color: #9CA3AF; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"><i
+                                    class="ph-bold ph-caret-right"
+                                    style="font-size: 14px; transition: transform 0.3s ease;"></i> Sectors We Serve</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 1.5rem; color: white;">Services
+                    </h4>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li><a href="#" class="footer-link"
+                                style="color: #9CA3AF; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"><i
+                                    class="ph-bold ph-caret-right"
+                                    style="font-size: 14px; transition: transform 0.3s ease;"></i> Panel Cleaning</a>
+                        </li>
+                        <li><a href="#" class="footer-link"
+                                style="color: #9CA3AF; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"><i
+                                    class="ph-bold ph-caret-right"
+                                    style="font-size: 14px; transition: transform 0.3s ease;"></i> System Repairs</a>
+                        </li>
+                        <li><a href="#" class="footer-link"
+                                style="color: #9CA3AF; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"><i
+                                    class="ph-bold ph-caret-right"
+                                    style="font-size: 14px; transition: transform 0.3s ease;"></i> HVAC Maintenance</a>
+                        </li>
+                        <li><a href="#" class="footer-link"
+                                style="color: #9CA3AF; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;"><i
+                                    class="ph-bold ph-caret-right"
+                                    style="font-size: 14px; transition: transform 0.3s ease;"></i> Electrical Work</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 1.5rem; color: white;">Contact Us
+                    </h4>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
+                        <li style="display: flex; align-items: start; gap: 0.75rem;">
+                            <i class="ph-fill ph-map-pin"
+                                style="font-size: 20px; color: #F4B400; flex-shrink: 0; margin-top: 2px;"></i>
+                            <span style="color: #9CA3AF; line-height: 1.6;">Dubai Silicon Oasis, UAE</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="ph-fill ph-envelope" style="font-size: 20px; color: #F4B400; flex-shrink: 0;"></i>
+                            <a href="mailto:sales@loadicea.com"
+                                style="color: #9CA3AF; text-decoration: none; transition: color 0.3s ease;">sales@loadicea.com</a>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="ph-fill ph-phone" style="font-size: 20px; color: #F4B400; flex-shrink: 0;"></i>
+                            <a href="tel:+971529975000"
+                                style="color: #9CA3AF; text-decoration: none; transition: color 0.3s ease;">+971 52 997
+                                5000</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <div style="color: #6B7280; font-size: 0.875rem;">
+                    © 2026 Loadicea Heating Solutions Trading. All rights reserved.
+                </div>
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <a href="#"
+                        style="color: #6B7280; text-decoration: none; font-size: 0.875rem; transition: color 0.3s ease;">Privacy
+                        Policy</a>
+                    <a href="#"
+                        style="color: #6B7280; text-decoration: none; font-size: 0.875rem; transition: color 0.3s ease;">Terms
+                        of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Footer social hover */
+        .footer-social:hover {
+            background: rgba(244, 180, 0, 0.2);
+            border-color: #F4B400;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(244, 180, 0, 0.3);
+        }
+
+        /* Footer link hover */
+        .footer-link:hover {
+            color: #F4B400;
+        }
+
+        .footer-link:hover i {
+            transform: translateX(4px);
+        }
+    </style>
+
+    <script src="js/animations.js"></script>
+    <script src="js/mobile-nav.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* Bento Grid Layout */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .bento-item-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .bento-item-medium {
+        grid-column: span 2;
+    }
+}
+
+.bento-item {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    border: 1px solid var(--color-bg-light);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bento-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-secondary);
+}
+
+.bento-icon {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+    transition: transform 0.4s ease;
+}
+
+.bento-item:hover .bento-icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Modern Stat Cards */
+.stat-card-modern {
+    background: var(--color-bg-dark);
+    color: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-card-modern::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(244, 180, 0, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.stat-card-modern:hover::after {
+    opacity: 1;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--color-secondary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+/* Feature Icon Cards */
+.feature-checklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-check-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #F9FAFB;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-secondary);
+    transition: transform 0.3s ease;
+}
+
+.feature-check-item:hover {
+    transform: translateX(10px);
+    background: white;
+    box-shadow: var(--shadow-md);
+}
+
+.check-icon {
+    color: var(--color-secondary);
+    font-size: 1.25rem;
+}
