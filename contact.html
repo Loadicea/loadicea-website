@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKTC4B6F99"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MKTC4B6F99');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Loadicea Heating Solutions</title>
@@ -408,6 +418,24 @@
                     <p style="color: var(--color-text-light); margin-bottom: 2rem;">Fill out the form below and
                         we'll get back to you within 24 hours</p>
 
+                    <!-- DEBUG ELEMENT -->
+                    <div id="debug-log"
+                        style="background: #333; color: #0f0; padding: 10px; font-family: monospace; display: block; border-radius: 5px; margin-bottom: 20px; word-break: break-all;">
+                        ** DEBUG LOG READY **<br>
+                    </div>
+                    <script>
+                        function logDebug(msg) {
+                            var b = document.getElementById('debug-log');
+                            if (b) b.innerHTML += msg + '<br>';
+                            console.log(msg);
+                        }
+                        document.addEventListener("DOMContentLoaded", function () {
+                            document.getElementById('contactForm').addEventListener('invalid', function (e) {
+                                logDebug('Form Validation Failed on element name: ' + e.target.name + ', id: ' + e.target.id);
+                            }, true);
+                        });
+                    </script>
+
                     <!-- Step 1: Customer Type -->
                     <div class="form-group" style="margin-bottom: 1.5rem;">
                         <label for="property-type"
@@ -786,15 +814,19 @@
             </div>
             <div
                 style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                <div style="color: #6B7280; font-size: 0.875rem;">© 2026 Loadicea Heating Solutions Trading. All rights
-                    reserved.</div>
+                <div style="color: #6B7280; font-size: 0.875rem;">
+                    © 2026 Loadicea Heating Solutions Trading. All rights reserved.
+                </div>
                 <div style="display: flex; align-items: center; gap: 2rem;">
-                    <a href="#"
+                    <a href="about-us.html"
+                        style="color: #6B7280; text-decoration: none; font-size: 0.875rem; transition: color 0.3s ease;">About
+                        Us</a>
+                    <a href="privacy-policy.html"
                         style="color: #6B7280; text-decoration: none; font-size: 0.875rem; transition: color 0.3s ease;">Privacy
                         Policy</a>
-                    <a href="#"
+                    <a href="terms-conditions.html"
                         style="color: #6B7280; text-decoration: none; font-size: 0.875rem; transition: color 0.3s ease;">Terms
-                        of Service</a>
+                        & Conditions</a>
                 </div>
             </div>
         </div>
