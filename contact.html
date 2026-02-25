@@ -418,24 +418,6 @@
                     <p style="color: var(--color-text-light); margin-bottom: 2rem;">Fill out the form below and
                         we'll get back to you within 24 hours</p>
 
-                    <!-- DEBUG ELEMENT -->
-                    <div id="debug-log"
-                        style="background: #333; color: #0f0; padding: 10px; font-family: monospace; display: block; border-radius: 5px; margin-bottom: 20px; word-break: break-all;">
-                        ** DEBUG LOG READY **<br>
-                    </div>
-                    <script>
-                        function logDebug(msg) {
-                            var b = document.getElementById('debug-log');
-                            if (b) b.innerHTML += msg + '<br>';
-                            console.log(msg);
-                        }
-                        document.addEventListener("DOMContentLoaded", function () {
-                            document.getElementById('contactForm').addEventListener('invalid', function (e) {
-                                logDebug('Form Validation Failed on element name: ' + e.target.name + ', id: ' + e.target.id);
-                            }, true);
-                        });
-                    </script>
-
                     <!-- Step 1: Customer Type -->
                     <div class="form-group" style="margin-bottom: 1.5rem;">
                         <label for="property-type"
@@ -448,8 +430,8 @@
                             class="form-input"
                             style="width: 100%; padding: 0.875rem; border: 2px solid #E5E7EB; border-radius: 8px; background: white; font-size: 1rem; transition: all 0.3s ease;">
                             <option value="" disabled selected>Select Property Type</option>
-                            <option value="residential">Homeowner / Villa Owner</option>
-                            <option value="commercial">Business Manager / Property Manager</option>
+                            <option value="Residential Property">Homeowner / Villa Owner</option>
+                            <option value="Commercial Property">Business Manager / Property Manager</option>
                         </select>
                     </div>
 
@@ -537,10 +519,10 @@
                             class="form-input"
                             style="width: 100%; padding: 0.875rem; border: 2px solid #E5E7EB; border-radius: 8px; background: white; transition: all 0.3s ease;">
                             <option value="" disabled selected>Select Service...</option>
-                            <option value="solar">Solar System Service</option>
-                            <option value="building">Building Maintenance (AC, Electrical, etc.)</option>
-                            <option value="both">Both</option>
-                            <option value="other">Other</option>
+                            <option value="Solar Services">Solar System Service</option>
+                            <option value="Building Maintenance">Building Maintenance (AC, Electrical, etc.)</option>
+                            <option value="Both Services">Both</option>
+                            <option value="Other Service">Other</option>
                         </select>
                     </div>
 
@@ -604,14 +586,14 @@
                         const busInputs = document.querySelectorAll('.business-input');
                         const resInputs = document.querySelectorAll('.residential-input');
 
-                        if (type === 'commercial') {
+                        if (type === 'Commercial Property') {
                             businessFields.style.display = 'block';
                             resFields.style.display = 'none';
                             busInputs.forEach(i => i.required = true);
                             resInputs.forEach(i => i.required = false);
                             // Animate in
                             businessFields.style.animation = 'slideIn 0.3s ease-out';
-                        } else if (type === 'residential') {
+                        } else if (type === 'Residential Property') {
                             businessFields.style.display = 'none';
                             resFields.style.display = 'block';
                             busInputs.forEach(i => i.required = false);
@@ -625,7 +607,7 @@
                         const service = document.getElementById('service').value;
                         const solarQ = document.getElementById('solar-questions');
 
-                        if (service === 'solar' || service === 'both') {
+                        if (service === 'Solar Services' || service === 'Both Services') {
                             solarQ.style.display = 'block';
                             solarQ.style.animation = 'slideIn 0.3s ease-out';
                         } else {
